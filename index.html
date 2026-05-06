@@ -226,24 +226,34 @@
 				@media (max-width: 768px) {
 					.custom-footer {
 						position: fixed !important;
-						bottom: 10px !important;
+						bottom: 60px !important; /* Just above the blue button */
 						left: 0 !important;
+						width: 100vw !important;
 						display: flex !important;
-						flex-direction: column;
-						margin-top: 0;
-						padding-bottom: 0;
-						text-align: center;
-						width: 100vw;
+						flex-direction: row !important;
+						justify-content: space-between !important;
+						padding: 0 10px !important;
+						margin: 0 !important;
+						align-items: center !important;
 					}
 					.custom-footer .creator-info {
-						margin-bottom: 5px;
+						margin: 0 !important;
+					}
+					.custom-footer .creator-info p {
+						font-size: 11px !important;
 					}
 					.custom-footer .social-links {
-						justify-content: center !important;
-						gap: 15px !important;
+						justify-content: flex-end !important;
+						gap: 8px !important;
+						font-size: 11px !important;
 					}
-					.custom-footer p, .custom-footer a {
-						font-size: 13px !important;
+					.custom-footer .social-links a {
+						font-size: 11px !important;
+					}
+					.custom-footer .social-links svg {
+						width: 12px;
+						height: 12px;
+						margin-right: 2px !important;
 					}
 				}
 			</style>
