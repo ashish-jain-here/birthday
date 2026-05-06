@@ -14,7 +14,7 @@ $('document').ready(function(){
 			b3: vw - offset,
 			b4: vw + (gap * 1) - offset,
 			b5: vw + (gap * 2) - offset,
-			topPos: isMobile ? 130 : 180
+			topPos: isMobile ? 260 : 330
 		};
 	}
 
