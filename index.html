@@ -199,16 +199,18 @@
 					width: 100vw;
 					box-sizing: border-box;
 					padding: 0 30px;
-					z-index: 9999;
+					z-index: 99999;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 					pointer-events: none;
-					opacity: 0; /* Hidden initially */
-					transition: opacity 2s, color 1s, text-shadow 1s;
+					opacity: 0;
+					visibility: hidden;
+					transition: opacity 2s, visibility 2s, color 1s, text-shadow 1s;
 				}
 				.custom-footer.visible {
-					opacity: 1;
+					opacity: 1 !important;
+					visibility: visible !important;
 				}
 				.custom-footer > div {
 					pointer-events: auto;
@@ -221,16 +223,20 @@
 				body.peach .custom-footer p, body.peach-after .custom-footer p,
 				body.peach .custom-footer a, body.peach-after .custom-footer a {
 					color: #333 !important;
-					text-shadow: none;
+					text-shadow: none !important;
 				}
 				@media (max-width: 768px) {
 					.custom-footer {
-						flex-direction: column;
-						bottom: 80px; /* Placed above the buttons on mobile */
+						display: block !important;
+						text-align: center;
+						bottom: 120px; /* Placed well above the buttons on mobile */
 						padding: 0 15px;
-						gap: 10px;
+					}
+					.custom-footer .creator-info {
+						margin-bottom: 10px;
 					}
 					.custom-footer .social-links {
+						justify-content: center !important;
 						gap: 15px !important;
 					}
 					.custom-footer p, .custom-footer a {
