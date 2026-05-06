@@ -1338,8 +1338,14 @@ audio {
         font-size: 18px; /* Smaller font for mobile */
     }
     .btn-primary {
-        width: 100%; /* Full width buttons on mobile for easier clicking */
-        margin-bottom: 10px;
+        width: 85%; /* Slightly smaller than full width */
+        margin: 0 auto 15px auto; /* Centered */
+        border-radius: 30px; /* Modern pill shape */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        display: block;
+    }
+    .navbar-fixed-bottom {
+        bottom: 80px; /* Lift up to leave space for the footer */
     }
     .cake {
         transform: scale(0.6); /* Scale down cake on mobile */

@@ -225,24 +225,25 @@
 				}
 				@media (max-width: 768px) {
 					.custom-footer {
-						position: relative !important;
-						bottom: auto !important;
-						left: auto !important;
+						position: fixed !important;
+						bottom: 10px !important;
+						left: 0 !important;
 						display: flex !important;
 						flex-direction: column;
-						margin-top: 40px;
-						padding-bottom: 20px;
+						margin-top: 0;
+						padding-bottom: 0;
 						text-align: center;
+						width: 100vw;
 					}
 					.custom-footer .creator-info {
-						margin-bottom: 10px;
+						margin-bottom: 5px;
 					}
 					.custom-footer .social-links {
 						justify-content: center !important;
 						gap: 15px !important;
 					}
 					.custom-footer p, .custom-footer a {
-						font-size: 14px !important;
+						font-size: 13px !important;
 					}
 				}
 			</style>
@@ -261,7 +262,7 @@
 				</div>
 				` : ''}
 			</div>`;
-			$('.container').append(footerHtml);
+			$('body').append(footerHtml);
 		}
 	});
 </script>
