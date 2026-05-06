@@ -36,6 +36,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
+		$('.custom-footer').addClass('visible');
 		$(this).fadeOut('slow').delay(1000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});

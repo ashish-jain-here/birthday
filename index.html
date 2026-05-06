@@ -204,6 +204,11 @@
 					justify-content: space-between;
 					align-items: center;
 					pointer-events: none;
+					opacity: 0; /* Hidden initially */
+					transition: opacity 2s, color 1s, text-shadow 1s;
+				}
+				.custom-footer.visible {
+					opacity: 1;
 				}
 				.custom-footer > div {
 					pointer-events: auto;
@@ -220,14 +225,16 @@
 				}
 				@media (max-width: 768px) {
 					.custom-footer {
-						bottom: 15px;
+						flex-direction: column;
+						bottom: 80px; /* Placed above the buttons on mobile */
 						padding: 0 15px;
+						gap: 10px;
 					}
 					.custom-footer .social-links {
-						gap: 10px !important;
+						gap: 15px !important;
 					}
 					.custom-footer p, .custom-footer a {
-						font-size: 13px !important;
+						font-size: 14px !important;
 					}
 				}
 			</style>
