@@ -18,7 +18,7 @@ const config = {
         "Very",
         "Happy",
         "Birthday",
-        "Ashish"
+        "Shruthi" // Name of the person
     ],
 
     // Custom messages for the story
