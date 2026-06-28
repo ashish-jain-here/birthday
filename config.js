@@ -1,5 +1,5 @@
 const config = {
-    birthdayBoyGirl: "Astha", // Name of the person
+    birthdayBoyGirl: "Khushi", // Name of the person
     gender: "girl", // "boy" or "girl"
 
     // Name of the creator (displayed in the copyright footer)
@@ -18,7 +18,7 @@ const config = {
         "Very",
         "Happy",
         "Birthday",
-        "Astha" // Name of the person
+        "Khushi" // Name of the person
     ],
 
     // Custom messages for the story
